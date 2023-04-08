@@ -1,0 +1,39 @@
+.bloque {
+    padding: 25px;
+    border-color: #808080;
+    border-radius: 4px;
+    background-color: #fafaf5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bloque label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+}
+
+.title {
+    display: flex;
+    gap:7px;
+}
+
+.bloque label select {
+    border-color: #808080;
+    background-color: #fafaf5;
+    border-radius: 4px;
+    margin-top: 3px;
+    
+}
+
+.llegada h2 {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.invalid {
+    outline: 1px solid red;
+}

@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--yellow-color);
+    color: #fff;
+    position: relative;
+    justify-self: end;
+}
+
+footer .copyright {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 23px 50px;
+    line-height: 16px;
+}
+
+footer .redes {
+    margin: 0 14px;
+}
+
+footer .redes a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 25px;
+    font-size: 27px;
+}

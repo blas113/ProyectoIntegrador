@@ -1,0 +1,18 @@
+.descripcion {
+    width: 90vw;
+    color: var( --black-color);
+    padding-left: 15px ;
+}
+
+.descripcion p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 0.8rem;
+
+ }
+
+ .descripcion h3 {
+    font-size: 1rem
+ }
+
+

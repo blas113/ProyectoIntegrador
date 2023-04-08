@@ -1,0 +1,65 @@
+.ubic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: rgb(255, 251, 226);
+    padding: 8px 15px 5px 15px;
+    color: rgba(38, 50, 56, 1);
+}
+
+.lugar {
+    display: flex;
+}
+.lugar h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-left: 5px;
+}
+
+.calif p {
+    font-size: 14px;
+}
+
+.calificacion {
+  display: flex;
+  flex-direction: column;
+  
+}
+.calif {
+    display: flex;
+    gap: 10px;
+}
+.puntaje {
+    color: var(--background);
+    padding: 5px;
+    background-color: var(--yellow-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 7px;
+    text-align: center;
+}
+.star{
+    font-size: 14px;
+}
+/*MOVIL*/
+@media (min-width: 320px) and (max-width: 490px) {
+    .star {
+        font-size: 0.7rem;
+    }
+
+    .calif p {
+        font-size: 0.7rem;
+    }
+
+    .lugar h5 {
+        font-size: 0.7rem;
+        width: 37vw;
+    }
+.puntaje {
+    
+    width: 2rem;
+    height: 2rem;
+    }
+}

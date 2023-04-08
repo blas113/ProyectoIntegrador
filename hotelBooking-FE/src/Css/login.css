@@ -1,0 +1,85 @@
+/* * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    background-color: #d6dada;
+    overflow:hidden;
+
+} */
+
+@font-face {
+    font-family: "Poppins";
+    src: url('https://fonts.google.com/?query=poppins');
+}
+
+.in-Sesion {
+    color: rgba(251, 192, 45, 1) ;
+    font-weight:bolder;
+    font-size: 1.5rem;
+    
+}
+
+
+
+/* .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+label {
+   
+    text-align: left;
+    font-size: 500px;
+    
+   
+}
+
+input {
+    border-style:hidden;
+    border-color: #808080;
+    border-radius: 4px;
+    /* width: 420px; */
+    /* height: 40px; */
+    offset: 0px, 4px;
+    /* background-color:aliceblue */
+    
+}
+
+.button {
+     width: 206px;
+     height: 40px;
+     top:68px;
+     left: 23px;
+     color: #e3eded;
+     font-weight: 700;
+     background-color:rgba(251, 192, 45, 1) ;
+    border-radius: 4px;
+    border-style: none;
+    }
+
+    .but {
+        margin-top: 2.5rem;
+    }
+
+    .lin {
+        text-align: center;
+    }
+
+    .div-pass {
+        width: 100%;
+        position: relative;
+    }
+
+    .div-pass input {      
+        width: 100%;
+    }
+
+    .div-pass span {
+        position: absolute;
+        top: 4px;
+        right: 8px;
+        font-size: 20px;
+        color: var(--black-color);
+        border-style: none;
+        cursor: pointer;
+    }

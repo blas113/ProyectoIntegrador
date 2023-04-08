@@ -1,0 +1,27 @@
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  padding: .5em 1.5em;
+  background-color: #607D8B;
+  color: #fff;
+  align-items: center;
+}
+
+.product-header a {
+  display: grid;
+  place-content: center;
+}
+
+.product-header * {
+  text-transform: uppercase;
+}
+
+.cat {
+  font-size: .75em;
+  color: #F3F1ED;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.1em;
+}

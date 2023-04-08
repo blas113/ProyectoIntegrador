@@ -1,0 +1,171 @@
+/* .product {
+  padding: 1em 2em;
+  background: #FFFBE2;
+  
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.califications {
+  display: flex;
+  align-items: center;
+}
+.loc-ping {
+  max-height: 15px;
+}
+
+.direc {
+  color: #263238;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.valor {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3em;
+  padding: .5em .75em;
+  border-radius: 10px;
+  background-color: #607D8B;
+}
+
+.blank {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(1%) saturate(62%);
+} */
+
+.product-template {
+  background-color: #fff;
+}
+
+.caracteristicas-calendario {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.calendarContainer {
+  /* justify-self: center; */
+  font-size: 1.2em;
+  z-index: 10;
+  /* width: 80%; */
+}
+
+.calendarContainer.reserve {
+  background-color: inherit;
+}
+
+.calendarContainer.reserve * {
+  color: #111;
+}
+
+.calendarContainer.reserve #left, .calendarContainer.reserve #right {
+  background-color: transparent;
+  filter: brightness(.3)
+}
+
+.calendar-setter {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* margin-bottom: 1em; */
+  /* background-color: #000; */
+}
+
+.calendar-setter * {
+  flex-basis: 350px;
+}
+
+.calendarContainer.reserve .numDay {
+  pointer-events: none;
+}
+
+.calendarContainer.reserve .calendarHeader {
+  background-color: inherit;
+}
+
+
+.caracteristica{
+  flex: 2;
+}
+
+.calendar-setterContainer {
+  display: grid;
+  width: 80%;
+  max-width: 800px;
+  margin: 3em auto;
+  border-radius: 5px;
+  background-color: #FFFBE2;
+  /* justify-content: stretch; */
+  /* width: max-content; */
+}
+
+.reserva-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #FBC02D;
+  font-size: 1.2em;
+  padding: .5em 1.5em;
+  border-radius: 5px;
+  display: block;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.login-error {
+  display: none; 
+  opacity: 0;
+  position: fixed;
+  top: 6em;
+  margin: auto;
+  width: max-content;
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  font-size: 1.2em;
+  border-radius: 10px;
+  color: #d81d2a;
+  background-color: #fbe8e9;
+  z-index: 20;
+  animation-name: login-msg;
+  animation-duration: 2s;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+
+.animate {
+  display: block;
+  animation-play-state: running;
+}
+
+@keyframes login-msg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .caracteristicas-calendario {
+    display: grid;
+  }
+
+  .login-error {
+    width: 100%;
+  }
+
+  .caracteristica * {
+    text-align: center;
+  }
+  
+}

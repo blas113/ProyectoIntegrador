@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    /* background-color: #d6dada; */
+    /* overflow:hidden; */
+    
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('https://fonts.google.com/?query=poppins');
+}
+
+.in-Sesion {
+    color: rgba(251, 192, 45, 1) ;
+    font-weight:bolder;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.page {
+        display: grid;
+        margin-top: 7rem;
+        background-color: #FFFBE2;
+        gap: 20px;
+}
+
+
+.form {
+    /* display: flex;
+    flex-direction: column;
+    /* align-items: left; */
+    /* max-width: 700px;
+    gap: 10px;  */
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+label {
+    text-align:left;
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.nomyAp * {
+    flex: 1;
+}
+
+.nomyAp label{
+    display: flex;
+    text-align:left;
+    font-size: 1rem;
+}
+
+.nomyAp input {
+    width: 100%;
+}
+
+.form-input {
+    display: grid;
+}
+
+.form-input input {
+    width: 100%;
+}
+
+.but {
+    text-align: center;
+}
+
+.but #error-message {
+    font-size: 14px;
+    /* width: 100%; */
+    font-weight: 700;
+    color: red;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.lin {
+    text-align: center;
+}
+
+ input {
+    color: #222;
+    border: 0;
+    border-color: #808080;
+    border-radius: 4px;
+    /* width: 200px; */
+    /* height: 40px; */
+    offset: 0px, 4px;
+    background-color:#ffffff;
+    box-shadow: 0px 1px 5px 0px #00000026;
+
+}
+
+input:focus {
+    outline: 0;
+}
+
+/* #home-button .button1 {
+    display: none;
+}  */
+
+
+form .error {
+    font-size: 0.7rem;
+    text-align: right;
+    color: red;
+}
+
+/*MOVIL*/
+@media (min-width: 320px) and (max-width: 490px) {
+    .page {
+    background-color: #FFFBE2;
+
+}
+.nomyAp input {
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .politicas section {
+        display: flex;
+        margin-top: 10px;
+
+    }
+    .politicas div {
+        width: 60vw;
+    }
+
+    .page {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+}
+/*desktop*/
+@media (min-width: 1024px) and (max-width: 2000px) {
+.nomyAp {
+    display: flex;
+    gap: 10px;
+}
+}

@@ -1,0 +1,137 @@
+.calendarsInput {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px 0px #00000026;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    position: relative;
+    /* justify-content: space-around; */
+
+    flex-grow: 2;
+    z-index: 10;
+    max-width: 600px;
+
+}
+
+.calendars {
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    width: 100%;
+    top: calc(100% + 10px);
+    left: 0;
+    /* flex: 1; */
+    grid-template-columns: repeat(2, 1fr);
+    transition: all .3s;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 0px #00000026;
+}
+
+.calendarContainer:first-child::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: rgba(0 0 0 /.2);
+    top: 10%;
+    bottom: 10%;
+    right: 0;
+}
+
+.calendars.visible {
+    display: grid;
+    opacity: 1;
+}
+
+.calendars * {
+    font-size: .95em;
+    /* max-width: 300px; */
+    /* flex: 1; */
+    justify-self: stretch;
+    align-self: baseline;
+    
+}
+
+.chevron, .dateButton {
+    background-color: transparent;
+    padding: 0 10px;
+    border: 0;
+    cursor: pointer;
+    flex: 1;
+}
+
+.chevron:hover, .dateButton:hover {
+    opacity: .8;
+    background-color: rgba(0 0 0 /.3);
+}
+
+.applyContainer {
+    text-align: center;
+    margin: 5px 0;
+    grid-column: span 2;
+}
+
+.apply {
+    padding: 5px 0;
+    width: 75%;
+    background-color: #FBC02D;
+    color: #fff;
+    font-weight: 400;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply:hover {
+    opacity: .8;
+}
+
+.saca-filtro {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    z-index: 15;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.saca-filtro:hover {
+    filter: invert(19%) sepia(85%) saturate(7456%) hue-rotate(358deg) brightness(96%) contrast(116%);
+}
+
+.saca-filtro svg {
+    height: 40%;
+    width: max-content;
+}
+
+@media screen and (max-width: 980px) {
+    .calendars {
+        grid-template-columns: 1fr;
+    }
+
+    .applyContainer {
+        grid-column: span 1;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .dateButton {
+        padding: .5em 0;
+    }
+
+    .calendarsInput {
+        max-width: unset;
+    }
+}
+
+.calendarContainer.reserve:first-child::after {
+    display: none;
+}

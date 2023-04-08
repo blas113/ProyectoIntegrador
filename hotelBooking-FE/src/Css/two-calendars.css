@@ -1,0 +1,20 @@
+.view-only .react-calendar__month-view__days__day {
+  pointer-events: none;
+}
+
+.react-calendar.view-only {
+  width: unset;
+  background-color: #FFFBE2;
+}
+
+.relative {
+  position: relative;
+  top: 0;
+  width: 100%;
+  max-width: unset;
+}
+
+.relative .react-calendar {
+  max-width: unset;
+  width: 100%;
+}

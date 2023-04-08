@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: var(--yellow-color);
+    padding: 8px 15px 5px 15px;
+    color: #fff;
+    margin: auto;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: none;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    
+    font-size: 27px;
+}

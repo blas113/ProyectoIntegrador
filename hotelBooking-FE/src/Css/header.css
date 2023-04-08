@@ -1,0 +1,322 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: #FFFBE2;
+    z-index: 20;
+}
+
+header #logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header #logo p {
+    font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    color: var(--black-color);
+}
+
+header #home-button {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link{
+    color: var(--yellow-color);
+    font-weight: 700;
+    display: block;
+    /* font-size: 18px; */
+    padding: .5em 1.5em;
+    /* padding: 11px 56px; */
+    border: 1px solid var(--yellow-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+
+.nav-link:hover {
+    /* text-decoration: underline;
+     */
+     background: var(--yellow-color);
+     color: var(--background);
+}
+
+header .nav-responsive {
+    z-index: 999;
+    display: none;
+}
+
+.responsive-navbar {
+    display: none;
+}
+
+
+header .user {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    display: grid;
+    place-content: center;
+    color: #fff;
+    background: var(--black-color);
+    font-size: 20px;
+    width: calc(100% + 5px);
+    aspect-ratio: 1;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+header .user .hellow {
+    color: var(--grey-color);
+    font-weight: 700;
+}
+
+.userName {
+    display: flex;
+    font-weight: 700;
+    color: var(--yellow-color);
+    padding: .5em 1em;
+    border: 0;
+    background-color: transparent;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.userName:hover {
+    filter: grayscale(.2);
+}
+
+.userName img {
+    width: 30px;
+    object-fit: contain;
+    filter: invert(90%) sepia(28%) saturate(2654%) hue-rotate(333deg) brightness(101%) contrast(97%);
+}
+
+.expandable {
+    position: absolute;
+    text-align: center;
+    top: calc(100%);
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden; 
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1em;
+    transition: max-height .3s ease-in;
+    cursor: pointer;
+}
+
+.expandable * {
+    color: var(--yellow-color);
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logOut-btn {
+    border: 0;
+}
+
+.expandable *:hover {
+    text-decoration: underline;
+}
+
+.userName.focused {
+    background-color: rgb(243, 236, 191);
+}
+
+.expandable.expanded {
+    max-height: 500px;
+}
+
+header .user .close {
+    color: #fff;
+    background-color: var(--yellow-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    
+    .responsive-navbar {
+        position: fixed;
+        z-index: 10;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        /* gap: 1em; */
+        justify-content: stretch;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #FBC02D;
+        /* top: -500px; */
+        transform: translateY(-2000px);
+        transition: transform .2s ease;
+
+    }
+
+    .responsive-navbar.visible {
+        transform: translateY(0);
+    }
+
+    .responsive-link {
+        cursor: pointer;
+        text-align: right;
+        display: block;
+        padding: 1em;
+        font-family: inherit;
+        color: var(--yellow-color);
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .responsive-link:first-child::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        height: 1px;
+        left: 5%;
+        right: 5%;
+        background-color: rgba(84 87 118 / .7);
+    }
+
+    .title-responsive {
+        display: grid;
+        place-content: end;
+        padding: 10px;
+        font-size: 1.2em;
+        gap: 1em;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .title-responsive * {
+        text-align: center;
+    }
+
+    .links {
+        background-color: #fff;
+        
+    }
+
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        background: #fff ;
+    }
+
+    .footer-mobile p {
+        margin: 0 20px;
+        font-weight: 500;
+    }
+
+    .footer-mobile p span {
+        color: var(--yellow-color);
+    }
+
+    .redes-mobile {
+        position: relative;
+        margin: 20px 8px;
+        width: 100%;
+        text-align: right;
+    }
+
+    .redes-mobile::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: -15px;
+        height: 1px;
+        left: 5%;
+        right: 5%;
+        background-color: rgba(84 87 118 / .7);
+    }
+
+    .redes-mobile a {
+        text-decoration: none;
+        color: var(--black-color);
+        padding: 10px;
+        font-size: 27px;
+        
+    }
+
+    .user-mobile {
+        display: grid;
+        place-content: end;
+        gap: .3em;
+        margin: 0 10px;
+    }
+
+
+    .user-mobile .hellow {
+        color: var(--background);
+        font-weight: 700;
+        text-align: right;
+    }
+
+    .user-mobile .userName {
+        padding: 0;
+        font-weight: 700;
+        color: var(--black-color);
+    }
+
+    .burgers {
+    display: grid;
+    gap: 5px;
+    }
+
+    .burger {
+        width: 30px;
+        height: 5px;
+        background-color: #000;
+    }
+
+    .burger {
+        transition: all .4s;
+    }
+
+    .burgers.active .burger:first-child {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .burgers.active .burger:last-child {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .burgers.active .burger:nth-child(2) {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+}
+

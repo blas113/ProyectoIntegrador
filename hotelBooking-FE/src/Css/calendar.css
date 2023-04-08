@@ -1,0 +1,86 @@
+.calendarContainer {
+    padding: .8em;
+    display: grid;
+    /* gap: 10px; */
+    background-color: #fff;
+    position: relative;
+    align-content: baseline;
+    /* place-content: baseline;  */
+    /* border-radius: 5px; */
+}
+
+.calendarHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+    align-items: center;
+    position: relative;   
+    text-align: center;
+    background: #fff;
+}
+
+.calendarHeader::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 8px;
+    left: 25%;
+    right: 25%;
+    background-color: #FBC02D;
+    border-radius: 999px;
+}
+
+.year {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.weekDays {
+    color: rgba(0, 0, 0, 0.6);
+    /* margin-bottom: .5em; */
+    font-weight: 600;
+}
+
+.grid-7col {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(7, 1fr);
+    /* padding: 0 3.5em; */
+    gap: .5em;
+}
+
+.day {
+    /* text-align: center; */
+    padding: 1px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center  ;
+}
+
+.numDay {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.numDay:hover {
+    background: #FBC02D;
+    color: #fff;
+}
+
+.not-acc {
+    background-color: rgba(0 0 0 / .3);
+    opacity: .8;
+    color:rgba(0, 0, 0, 0.8);
+    /* border-radius: 5px; */
+    cursor:not-allowed;
+}
+
+#left, #right {
+    background: #fff;
+    padding: 5px 10px;
+}
+
+#left:hover, #right:hover {
+    background: rgba(0, 0, 0, 0.145);
+}
